@@ -19,13 +19,12 @@ const me = {
 console.log('A little about me:', me);
 
 /* 2. Accessing object properties.
-  - Create a variable called fullName 
-  - Use the firstName & lastName properties of the object you 
-    created above to set its value. 
+  - 
+  
   - Console.log fullName
 */
-let fullName = [firstName  lastName];
-console.log(`my name is, ${fullName}`);
+let fullName = me.firstName + ' ' + me.lastName
+console.log(`my name is: ${fullName}`);
 
 
 /* 3. Nested arrays
@@ -54,3 +53,8 @@ console.log(me.shoeCount);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+me.favoriteColor = 'Blue';
+// or it can be this way as well.
+me['favoriteColor'] = 'Blue';
+console.log(me);
